@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PortfolioBD/static/css/main.72526332.css",
+    "main.js": "/PortfolioBD/static/js/main.2d2b5878.js",
+    "static/media/vectors.png": "/PortfolioBD/static/media/vectors.98d7e57d1953414918a1.png",
+    "static/media/Fishdep.png": "/PortfolioBD/static/media/Fishdep.2bac94612f246d434837.png",
+    "static/media/reVector.png": "/PortfolioBD/static/media/reVector.35c0a292a0f1064cb205.png",
+    "static/media/slideVector.png": "/PortfolioBD/static/media/slideVector.2b589a46204da95cd42e.png",
+    "static/media/slideVector1.png": "/PortfolioBD/static/media/slideVector1.002a4400a1a63bd5c349.png",
+    "static/media/slideVector2.png": "/PortfolioBD/static/media/slideVector2.e8812b31bdba4e8fb86b.png",
+    "static/media/Rectangle.png": "/PortfolioBD/static/media/Rectangle.df5ca9ba26a7cffda49f.png",
+    "static/media/peakpx.jpg": "/PortfolioBD/static/media/peakpx.c7c0b065834cc4a06327.jpg",
+    "static/media/Mavka.jpg": "/PortfolioBD/static/media/Mavka.734104c0f79210ac374a.jpg",
+    "static/media/bfd.png": "/PortfolioBD/static/media/bfd.670111e794163495c016.png",
+    "index.html": "/PortfolioBD/index.html",
+    "main.72526332.css.map": "/PortfolioBD/static/css/main.72526332.css.map",
+    "main.2d2b5878.js.map": "/PortfolioBD/static/js/main.2d2b5878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72526332.css",
+    "static/js/main.2d2b5878.js"
+  ]
+}
