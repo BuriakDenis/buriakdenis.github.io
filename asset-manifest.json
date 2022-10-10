@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioBD/static/css/main.72526332.css",
-    "main.js": "/PortfolioBD/static/js/main.2d2b5878.js",
+    "main.css": "/PortfolioBD/static/css/main.b8908489.css",
+    "main.js": "/PortfolioBD/static/js/main.1f5a6113.js",
     "static/media/vectors.png": "/PortfolioBD/static/media/vectors.98d7e57d1953414918a1.png",
     "static/media/Fishdep.png": "/PortfolioBD/static/media/Fishdep.2bac94612f246d434837.png",
     "static/media/reVector.png": "/PortfolioBD/static/media/reVector.35c0a292a0f1064cb205.png",
@@ -13,11 +13,11 @@
     "static/media/Mavka.jpg": "/PortfolioBD/static/media/Mavka.734104c0f79210ac374a.jpg",
     "static/media/bfd.png": "/PortfolioBD/static/media/bfd.670111e794163495c016.png",
     "index.html": "/PortfolioBD/index.html",
-    "main.72526332.css.map": "/PortfolioBD/static/css/main.72526332.css.map",
-    "main.2d2b5878.js.map": "/PortfolioBD/static/js/main.2d2b5878.js.map"
+    "main.b8908489.css.map": "/PortfolioBD/static/css/main.b8908489.css.map",
+    "main.1f5a6113.js.map": "/PortfolioBD/static/js/main.1f5a6113.js.map"
   },
   "entrypoints": [
-    "static/css/main.72526332.css",
-    "static/js/main.2d2b5878.js"
+    "static/css/main.b8908489.css",
+    "static/js/main.1f5a6113.js"
   ]
 }
