@@ -29,7 +29,7 @@ const Jobs = (props) => {
             </div>
           </div>
           <div className="jobs__block-content-2 element-animation-right">
-            <div className="jobs__block-img img__block">
+            <div className="jobs__block-img">
               <Image image={fishDepartment} alt="2" className="img__block-2" />
             </div>
             <div className="jobs__block-info">

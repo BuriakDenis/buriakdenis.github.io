@@ -22,31 +22,21 @@ const Header = () => {
           </div>
           <nav className="header__navigation">
             <ul className={`header__menu ${burgerOpen && 'active'}`} >
-              <li className="header__list">
                 <a href="#home" className="header__link">
                   Home
                 </a>
-              </li>
-              <li className="header__list">
                 <a href="#about" className="header__link">
                   About
                 </a>
-              </li>
-              <li className="header__list">
                 <a href="#jobs" className="header__link">
                   Jobs
                 </a>
-              </li>
-              <li className="header__list">
                 <a href="#skills" className="header__link">
                   Skills
                 </a>
-              </li>
-              <li className="header__list">
                 <a href="!#" className="header__link">
                   Contact
                 </a>
-              </li>
             </ul>
           </nav>
           <div onClick={() => setBurgerOpen(burgerOpen = !burgerOpen)} className={`header__menu-btn ${burgerOpen && 'active'}`}>

@@ -74,9 +74,12 @@
     width: 84%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .swiper {
     width: 48%;
+  }
+  .skills__section-name {
+    font-size: 38px;
   }
 }
 @media (max-width: 640px) {

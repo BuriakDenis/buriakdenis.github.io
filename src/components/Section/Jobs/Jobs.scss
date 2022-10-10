@@ -156,9 +156,6 @@
     }
   }
   .img {
-    &__block {
-      margin: 0px 10px;
-    }
     &__block-1 {
       width: 427px;
       height: 240px;
@@ -174,6 +171,152 @@
     &__block-4 {
       width: 427px;
       height: 240px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .jobs {
+    &__block-info {
+      flex: 1 1 auto;
+      align-items: flex-start;
+      margin: 0px 10px;
+    }
+    &__section-name {
+      font-size: 38px;
+    }
+  }
+  .img {
+    &__block-1 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-2 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-3 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-4 {
+      width: 427px;
+      height: 240px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .jobs {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 15px;
+    }
+    &__section-name {
+      flex: 1 1 auto;
+    }
+    &__block-content-1 {
+      justify-content: center;
+    }
+    &__block-content-2 {
+      justify-content: center;
+    }
+  }
+  .img {
+    &__block-1 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-2 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-3 {
+      width: 427px;
+      height: 240px;
+    }
+    &__block-4 {
+      width: 427px;
+      height: 240px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .img {
+    &__block-1 {
+      width: 397px;
+      height: 210px;
+    }
+    &__block-2 {
+      width: 397px;
+      height: 210px;
+    }
+    &__block-3 {
+      width: 397px;
+      height: 210px;
+    }
+    &__block-4 {
+      width: 397px;
+      height: 210px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .img {
+    &__block-1 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-2 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-3 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-4 {
+      width: 347px;
+      height: 170px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .img {
+    &__block-1 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-2 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-3 {
+      width: 347px;
+      height: 170px;
+    }
+    &__block-4 {
+      width: 347px;
+      height: 170px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .img {
+    &__block-1 {
+      width: 287px;
+      height: 160px;
+    }
+    &__block-2 {
+      width: 287px;
+      height: 160px;
+    }
+    &__block-3 {
+      width: 287px;
+      height: 160px;
+    }
+    &__block-4 {
+      width: 287px;
+      height: 160px;
     }
   }
 }

@@ -156,7 +156,7 @@
       &__menu {
         display: flex;
         justify-content: center;
-        padding: 60px 0px 0px 0px;
+        padding: 47px 0px 0px 0px;
         position: fixed;
         top: 0;
         right: -100%;
@@ -177,7 +177,9 @@
   @media (max-width: 425px) {
     .header {
       &__menu {
-        height: 60px;
+        padding: 59px 0px 0px 0px;
+        height: 120px;
+        border-bottom: 1px solid #a24cd7;
       }
       &__link {
         padding: 20px 19px 20px 19px;
@@ -187,22 +189,22 @@
   @media (max-width: 375px) {
     .header {
       &__menu {
-        padding: 80px 0px 0px 0px;
-        height: 60px;
+        padding: 60px 0px 0px 0px;
+        height: 120px;
       }
       &__link {
-        padding: 20px 12px;
+        padding: 20px 15px 20px 15px;
       }
     }
   }
   @media (max-width: 320px) {
     .header {
       &__menu {
-        padding: 65px 0px 0px 0px;
-        height: 35px;
+        padding: 60px 0px 0px 0px;
+        height: 120px;
       }
       &__link {
-        padding: 20px 5px 20px 6px;
+        padding: 20px 8px 20px 8px;
       }
     }
   }

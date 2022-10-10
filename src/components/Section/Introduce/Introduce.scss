@@ -6,6 +6,7 @@
   }
   &__content-contain {
     height: 830px;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -35,7 +36,6 @@
     line-height: 47px;
     letter-spacing: 0.02em;
   }
-
   &__hero {
     position: relative;
     height: 750px;
@@ -160,6 +160,11 @@
 @media (max-width: 768px) {
   .introduce {
     &__container {
+      height: 580px;
+    }
+    &__content-contain {
+      display: flex;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
     }
     &__hero {
@@ -186,6 +191,7 @@
 @media (max-width: 640px) {
   .introduce {
     &__container {
+      height: 520px;
     }
     &__hero {
       height: 410px;
@@ -211,6 +217,7 @@
 @media (max-width: 425px) {
   .introduce {
     &__container {
+      height: 880px;
       justify-content: center;
       align-items: center;
     }
@@ -223,9 +230,9 @@
       padding: 80px 0px 0px 0px;
     }
     &__content {
+      padding-left: 10px;
       justify-content: center;
       align-items: flex-start;
-      padding: 0px 0px 0px 30px;
     }
     &__hello {
       font-size: 26px;
@@ -260,14 +267,20 @@
 }
 @media (max-width: 375px) {
   .introduce {
+    &__container {
+      height: 890px;
+    }
     &__intro {
-      padding: 120px 0px 0px 0px;
+      padding: 80px 0px 0px 0px;
+    }
+    &__content {
+      padding-left: 0px;
     }
     &__hello {
-      font-size: 20px;
+      font-size: 24px;
     }
     &__job-name {
-      font-size: 18px;
+      font-size: 22px;
     }
     &__button {
       width: 200px;
@@ -283,22 +296,24 @@
 }
 @media (max-width: 320px) {
   .introduce {
+    &__container {
+      height: 730px;
+    }
     &__intro {
       padding: 65px 0px 0px 0px;
     }
     &__hello {
-      font-size: 16px;
+      font-size: 22px;
     }
     &__name {
-      font-size: 20px;
-      line-height: 80%;
-      padding: 0px 20px;
+      font-size: 32px;
+      line-height: 20px;
     }
     &__job-name {
-      font-size: 14px;
+      font-size: 22px;
     }
     &__hero {
-      height: 260px;
+      height: 280px;
     }
   }
 }

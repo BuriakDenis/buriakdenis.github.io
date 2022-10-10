@@ -1,6 +1,6 @@
 .arrow {
   &__scroll-down {
-    height: 6%;
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,4 +10,48 @@
     position: absolute;
     top: 30px;
   }
+}
+@media (max-width: 768px) {
+  .arrow {
+    &__scroll-down {
+      padding: 20px 40px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    &__scroll-link {
+      position: absolute;
+      top: 85px;
+    }
+  } 
+}
+@media (max-width: 640px) {
+  .arrow {
+    &__scroll-link {
+      top: 80px;
+    }
+  } 
+}
+@media (max-width: 425px) {
+  .arrow {
+    &__scroll-link {
+      top: 75px;
+    }
+  } 
+}
+@media (max-width: 375px) {
+  .arrow {
+    &__scroll-link {
+      top: 80px;
+    }
+  } 
+}
+@media (max-width: 320px) {
+  .arrow {
+    &__scroll-link {
+      top: 75px;
+    }
+  } 
 }

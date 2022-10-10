@@ -20,7 +20,7 @@ const Contacts = (props) => {
               I'm always open for the opportunity to get a new experiences and
               work with you
             </p>
-            <BtnOpenModal title="GET IN TOUCH" href="#!" />
+            <BtnOpenModal title="GET IN TOUCH" href="#!" className="element-animation-bottom"/>
           </div>
         </div>
       </div>

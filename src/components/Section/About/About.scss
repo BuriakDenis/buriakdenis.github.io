@@ -3,14 +3,16 @@
     background-repeat: no-repeat;
     &__container {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
       height: 742px;
     }
     &__hero {
-      flex: 0 1 50%;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: row-reverse;
     }
     &__name-section {
-      padding: 55px 0px 0px 0px;
+      padding: 40px 0px 40px 0px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -20,6 +22,7 @@
       letter-spacing: 0.02em;
     }
     &__hero-img {
+      flex: 0 1 50%;
       padding-top: 52px;
     }
     &__content {
@@ -92,22 +95,19 @@
       }
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .about {
       &__container {
-        height: fit-content;
         flex-direction: column;
       }
       &__hero {
         flex-direction: row-reverse;
       }
       &__name-section {
-        justify-content: flex-start;
         padding: 20px 0px 0px 0px;
-        font-size: 48px;
+        font-size: 38px;
       }
       &__hero-img {
-        justify-content: flex-end;
         padding-top: 50px;
       }
       &__content {
@@ -123,8 +123,78 @@
     }
     .img {
       &__hero-about {
-        margin: 0px 0px 0px 300px;
-        width: 40%;
+        margin: 0px 0px -2px 50px;
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    .about {
+      &__container {
+        flex-direction: column;
+      }
+      &__hero {
+        flex-direction: row-reverse;
+      }
+    }
+    .img {
+      &__hero-about {
+        margin: 70px 0px -2px 0px;
+        width: 90%;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .about {
+      &__container {
+        flex-direction: column;
+      }
+      &__hero {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+      &__hero-img {
+        padding-top: 0px;
+      }
+      &__title {
+        font-size: 30px;
+      }
+      &__info {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .img {
+      &__hero-about {
+        margin: 0px 0px -3px 20px;
+        width: max-content;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .about {
+      &__container {
+        flex-direction: column;
+      }
+      &__hero {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+      &__hero-img {
+        padding-top: 0px;
+      }
+      &__title {
+        font-size: 30px;
+      }
+      &__info {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .img {
+      &__hero-about {
+        margin: 0px 0px -3px 0px;
+        width: 100%;
       }
     }
   }

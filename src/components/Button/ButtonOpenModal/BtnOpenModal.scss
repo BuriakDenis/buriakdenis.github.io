@@ -23,3 +23,31 @@
     color: #00e5f2;
   }
 }
+@media (max-width: 425px) {
+  .button {
+    &__link {
+      width: 275px;
+      height: 66px;
+      font-size: 22px; 
+    }
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    &__link {
+      width: 275px;
+      height: 66px;
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .button {
+    &__link {
+      width: 235px;
+      height: 66px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
