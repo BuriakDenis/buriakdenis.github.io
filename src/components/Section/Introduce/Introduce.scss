@@ -1,0 +1,304 @@
+.introduce {
+  &__container {
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__content-contain {
+    height: 830px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__intro {
+    flex: 0 1 50%;
+    padding: 180px 0px 132px 20px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 75%;
+  }
+  &__hello {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+  }
+  &__job-name {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+
+  &__hero {
+    position: relative;
+    height: 750px;
+    flex: 0 1 50%;
+    background-image: url("../../../components/Section/Introduce/Img/peakpx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #00e5f2;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
+      rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
+      rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  }
+}
+.img {
+  &__hero {
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+  }
+}
+.arrow,
+.arrow:after,
+.arrow:before {
+  position: absolute;
+}
+.arrow {
+  width: 15px;
+  height: 15px;
+  margin: -20px 0 0 -2px;
+  -webkit-transform: rotate(45deg);
+  border-right: 2px #00e5f2 solid;
+  border-bottom: 2px #00e5f2 solid;
+}
+.arrow:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin: -5px 0px 0px -5px;
+  border-right: 1px #00e5f2 solid;
+  border-bottom: 1px #00e5f2 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+.arrow:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin: 0px 0 0 0px;
+  border-right: 1px #00e5f2 solid;
+  border-bottom: 1px #00e5f2 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-15px, -15px);
+  }
+}
+@media (max-width: 1145px) {
+  .introduce {
+    &__hello {
+      font-size: 24px;
+    }
+    &__name {
+      font-size: 52px;
+    }
+    &__job-name {
+      font-size: 30px;
+    }
+    &__hero {
+      height: 600px;
+    }
+    &__button {
+      width: 240px;
+      height: 66px;
+      margin: 25px 0px;
+    }
+    &__button-link {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .introduce {
+    &__hero {
+      height: 475px;
+    }
+    &__intro {
+      flex: 0 1 50%;
+      padding: 140px 0px 50px 0px;
+    }
+    &__hello {
+      font-size: 24px;
+    }
+    &__name {
+      font-size: 38px;
+    }
+    &__job-name {
+      font-size: 24px;
+    }
+    &__content {
+      width: 75%;
+    }
+    &__button {
+      width: 230px;
+      height: 60px;
+      margin: 25px 0px;
+    }
+    &__button-link {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .introduce {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__hero {
+      height: 475px;
+    }
+    &__intro {
+      flex: 0 1 50%;
+      padding: 140px 0px 50px 0px;
+    }
+    &__hello {
+      font-size: 24px;
+    }
+    &__name {
+      font-size: 36px;
+    }
+    &__job-name {
+      font-size: 22px;
+    }
+    &__content {
+      width: 75%;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .introduce {
+    &__container {
+    }
+    &__hero {
+      height: 410px;
+    }
+    &__intro {
+      flex: 0 1 50%;
+      padding: 120px 0px 50px 0px;
+    }
+    &__hello {
+      font-size: 20px;
+    }
+    &__name {
+      font-size: 30px;
+    }
+    &__job-name {
+      font-size: 20px;
+    }
+    &__content {
+      width: 75%;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .introduce {
+    &__container {
+      justify-content: center;
+      align-items: center;
+    }
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 50%;
+      padding: 80px 0px 0px 0px;
+    }
+    &__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px 0px 0px 30px;
+    }
+    &__hello {
+      font-size: 26px;
+      line-height: 16px;
+      padding: 20px 0px;
+    }
+    &__name {
+      font-size: 40px;
+      line-height: 80%;
+      padding: 20px 0px;
+    }
+    &__job-name {
+      font-size: 24px;
+      line-height: 20px;
+      padding: 20px 0px;
+    }
+    &__button {
+      width: 215px;
+      height: 50px;
+      margin: 25px 0px;
+    }
+    &__button-link {
+      font-size: 16px;
+      line-height: 16px;
+      padding: 16px 20px 16px 40px;
+    }
+    &__hero {
+      height: 400px;
+      flex: 1 1 50%;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .introduce {
+    &__intro {
+      padding: 120px 0px 0px 0px;
+    }
+    &__hello {
+      font-size: 20px;
+    }
+    &__job-name {
+      font-size: 18px;
+    }
+    &__button {
+      width: 200px;
+      height: 50px;
+      margin: 25px 0px;
+    }
+    &__button-link {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 16px 60px 16px 40px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .introduce {
+    &__intro {
+      padding: 65px 0px 0px 0px;
+    }
+    &__hello {
+      font-size: 16px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: 80%;
+      padding: 0px 20px;
+    }
+    &__job-name {
+      font-size: 14px;
+    }
+    &__hero {
+      height: 260px;
+    }
+  }
+}

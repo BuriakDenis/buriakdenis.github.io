@@ -1,0 +1,13 @@
+.arrow {
+  &__scroll-down {
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__scroll-link {
+    position: absolute;
+    top: 30px;
+  }
+}

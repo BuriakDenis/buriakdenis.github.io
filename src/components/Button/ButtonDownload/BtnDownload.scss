@@ -1,0 +1,56 @@
+.download {
+  &__button-link {
+    margin: 30px 0px 30px 0px;
+    width: 275px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid #00e5f2;
+    border-radius: 15px;
+    box-shadow: rgba(240, 46, 170, 0.12) 0px 2px 4px 0px,
+      rgba(240, 46, 170, 0.32) 0px 2px 16px 0px;
+    padding: 0px 10px;
+    transition: 0.5s;
+  }
+  &__button-link:hover {
+    letter-spacing: 0.2px;
+  }
+  &__button-link svg {
+    margin: 0px 0px 0px 8px;
+  }
+  &__button-link .arrow-circle-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+  }
+  &__button-link .arrow-circle-iconcircle {
+    transition: stroke-dashoffset 0.3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+  }
+  &__button-link:hover .arrow-circle-icon {
+    transform: translate3d(5px, 0, 0);
+  }
+  &__button-link:hover .arrow-circle-icon g {
+    stroke: rgb(240, 46, 170);
+  }
+  &__button-link:hover .arrow-circle-iconcircle {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .download {
+    &__button-link {
+      width: 230px;
+      height: 60px;
+      font-size: 16px;
+      padding: 20px 8px;
+    }
+  }
+}

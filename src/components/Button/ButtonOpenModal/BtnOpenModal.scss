@@ -1,0 +1,25 @@
+.button {
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #00e5f2;
+    border-radius: 15px;
+    width: 275px;
+    height: 66px;
+    margin: 25px 0px;
+    transition: 0.5s;
+    box-shadow: rgba(240, 46, 170, 0.12) 0px 2px 4px 0px,
+      rgba(240, 46, 170, 0.32) 0px 2px 16px 0px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 16px 20px 16px 25px;
+    transition: 0.5s;
+    letter-spacing: 0.02em;
+  }
+  &__link:hover {
+    letter-spacing: -0.2px;
+    color: #00e5f2;
+  }
+}

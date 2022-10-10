@@ -1,0 +1,209 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(9, 0, 21);
+    transition: transform 0.3s linear;
+    z-index: 10;
+    
+    &.hide {
+      transform: translateY(-92px);
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+      min-height: 92px;
+    }
+    &__border {
+      width: 100%;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #a24cd7;
+    }
+    &__logo {
+      flex: 1 1 auto;
+      margin-left: 7px;
+    }
+    &__logo-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      background-color: #4a2a72;
+      background: linear-gradient(to bottom right, #4a2a72, #851380);
+      border-radius: 999px;
+    }
+    &__logo-link {
+      color: #fff;
+      font-size: 18px;
+      padding: 18px 20px 18px 20px;
+      transition: 0.5s;
+      position: relative;
+    }
+    &__logo-link:hover {
+      color: #10cb81;
+    }
+    &__logo-link:hover::after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px;
+      background-color: #10cb81;
+    }
+    &__logo-link::after {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: #14faff;
+      transition: width 0.5s;
+    }
+    &__navigation {
+      height: 92px;
+      display: flex;
+      align-items: center;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+    }
+    &__link {
+      color: #fff;
+      padding: 20px 20px 18px 20px;
+      transition: 0.5s;
+      position: relative;
+    }
+    &__link:hover {
+      color: #10cb81;
+    }
+    &__link:hover::after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px;
+      background-color: #10cb81;
+    }
+    &__link::after {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: #14faff;
+      transition: width 0.5s;
+    }
+    &__menu-btn {
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    &__menu-btn span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #10cb81;
+      transition: all 0.5s;
+    }
+  }
+  @media (max-width: 767px) {
+    .header {
+      &__logo {
+        z-index: 20;
+      }
+      &__menu-btn {
+        display: flex;
+      }
+      &__menu-btn span:nth-last-of-type(2) {
+        top: calc(50% - 5px);
+      }
+      &__menu-btn span:nth-last-of-type(3) {
+        top: calc(50% + 5px);
+      }
+      &__menu-btn.active span:nth-of-type(1) {
+        display: none;
+      }
+      &__menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+        background-color: #14faff;
+      }
+      &__menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+        background-color: #14faff;
+      }
+      &__menu {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0px 0px 0px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 45px;
+        background: #090015;
+        transform: translateX(0%);
+        transition: transform 0.5s;
+      }
+      &__menu.active {
+        transform: translateX(-100%);
+      }
+      &__menu li {
+        list-style-type: none;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .header {
+      &__menu {
+        height: 60px;
+      }
+      &__link {
+        padding: 20px 19px 20px 19px;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .header {
+      &__menu {
+        padding: 80px 0px 0px 0px;
+        height: 60px;
+      }
+      &__link {
+        padding: 20px 12px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .header {
+      &__menu {
+        padding: 65px 0px 0px 0px;
+        height: 35px;
+      }
+      &__link {
+        padding: 20px 5px 20px 6px;
+      }
+    }
+  }
+  

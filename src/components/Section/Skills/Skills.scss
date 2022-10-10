@@ -1,0 +1,101 @@
+.skills {
+  background-image: url("../../../components/Section/Skills/Img/reVector.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  }
+  &__section-name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    margin-bottom: 55px;
+  }
+  &__info-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    color: #fff;
+    padding: 170px 20px 20px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  &__button-read-more {
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
+.swiper {
+  width: 72%;
+  height: 420px;
+  margin: 0px 50px 55px 50px;
+}
+.swiper-slide {
+  width: 275px;
+  height: 378px;
+  background-image: url("../../../components/Section/Skills/Img/slideVector.png");
+  background-size: cover;
+  border-radius: 18px;
+}
+.swiper-slide:nth-last-child(2n) {
+  background-image: url("../../../components/Section/Skills/Img/slideVector1.png");
+}
+.swiper-slide:nth-last-child(3n) {
+  background-image: url("../../../components/Section/Skills/Img/slideVector2.png");
+}
+.swiper-pagination-bullet {
+  background-color: #a24cd7;
+}
+
+@media (max-width: 1024px) {
+  .swiper {
+    width: 99%;
+  }
+}
+@media (max-width: 990px) {
+  .swiper {
+    width: 84%;
+  }
+}
+@media (max-width: 767px) {
+  .swiper {
+    width: 48%;
+  }
+}
+@media (max-width: 640px) {
+  .swiper {
+    width: 55%;
+  }
+}
+@media (max-width: 425px) {
+  .swiper {
+    width: 79%;
+  }
+}
+@media (max-width: 425px) {
+  .swiper {
+    width: 91%;
+  }
+}
+@media (max-width: 320px) {
+  .swiper {
+    width: 100%;
+  }
+}
