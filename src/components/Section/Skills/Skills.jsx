@@ -27,13 +27,15 @@ const Skills = (props) => {
           breakpoints={{
             320: {
               slidesPerView: 1,
+              slidesPerGroup: 1,
               spaceBetween: 20,
             },
             640: {
               slidesPerView: 1,
+              slidesPerGroup: 1,
               spaceBetween: 20,
             },
-            768: {
+            660: {
               slidesPerView: 2,
               spaceBetween: 40,
             },
@@ -46,7 +48,7 @@ const Skills = (props) => {
         >
           <div className="skills__card-info swiper-wrapper">
             <SwiperSlide className="skills__info-slide swiper-slide">
-              <a href="pageSkills.html" className="skills__info-link">
+              <a href="!" className="skills__info-link">
                 <h4 className="skills__title">Languages</h4>
                 <p className="skills__button-read-more">Learn more</p>
               </a>

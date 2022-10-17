@@ -22,8 +22,10 @@
       letter-spacing: 0.02em;
     }
     &__hero-img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
       flex: 0 1 50%;
-      padding-top: 52px;
     }
     &__content {
       flex: 0 1 50%;
@@ -52,7 +54,6 @@
   }
   .img {
     &__hero-about {
-      margin: 3px 0px 0px 120px;
       width: 61%;
     }
   }
@@ -60,8 +61,7 @@
   @media (max-width: 1145px) {
     .img {
       &__hero-about {
-        margin: 4px 0px 0px 40px;
-        width: 83%;
+        width: 70%;
       }
     }
   }
@@ -73,9 +73,6 @@
       &__name-section {
         padding: 20px 0px 0px 0px;
         font-size: 48px;
-      }
-      &__hero-img {
-        padding-top: 50px;
       }
       &__content {
         flex: 1 1 50%;
@@ -90,25 +87,18 @@
     }
     .img {
       &__hero-about {
-        margin: 6px 0px -2px 40px;
         width: 80%;
       }
     }
   }
   @media (max-width: 768px) {
     .about {
-      &__container {
-        flex-direction: column;
-      }
       &__hero {
         flex-direction: row-reverse;
       }
       &__name-section {
         padding: 20px 0px 0px 0px;
         font-size: 38px;
-      }
-      &__hero-img {
-        padding-top: 50px;
       }
       &__content {
         flex: 1 1 50%;
@@ -123,39 +113,24 @@
     }
     .img {
       &__hero-about {
-        margin: 0px 0px -2px 50px;
-        width: 80%;
+        width: 100%;
       }
     }
   }
   @media (max-width: 640px) {
     .about {
-      &__container {
-        flex-direction: column;
-      }
       &__hero {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
       }
     }
     .img {
       &__hero-about {
-        margin: 70px 0px -2px 0px;
-        width: 90%;
+        width: 51%;
       }
     }
   }
   @media (max-width: 425px) {
     .about {
-      &__container {
-        flex-direction: column;
-      }
-      &__hero {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-      }
-      &__hero-img {
-        padding-top: 0px;
-      }
       &__title {
         font-size: 30px;
       }
@@ -166,23 +141,12 @@
     }
     .img {
       &__hero-about {
-        margin: 0px 0px -3px 20px;
-        width: max-content;
+        width: 80%;
       }
     }
   }
   @media (max-width: 320px) {
     .about {
-      &__container {
-        flex-direction: column;
-      }
-      &__hero {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-      }
-      &__hero-img {
-        padding-top: 0px;
-      }
       &__title {
         font-size: 30px;
       }
@@ -193,8 +157,7 @@
     }
     .img {
       &__hero-about {
-        margin: 0px 0px -3px 0px;
-        width: 100%;
+        width: 90%;
       }
     }
   }

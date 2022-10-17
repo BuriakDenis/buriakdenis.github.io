@@ -143,7 +143,7 @@ const ModalWindow = ({active, setActive}) => {
               </defs>
             </svg>
           </a>
-          <a href="!" className="content__social-link">
+          <a href="https://www.linkedin.com/in/%D0%B4%D0%B5%D0%BD%D0%B8%D1%81-%D0%B1%D1%83%D1%80%D1%8F%D0%BA-425974253/" className="content__social-link">
             <svg
               width="48"
               height="48"

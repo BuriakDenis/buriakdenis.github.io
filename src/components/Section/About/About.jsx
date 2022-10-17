@@ -14,9 +14,9 @@ const About = () => {
           <div className="about__hero-img img element-animation-right">
             <Image image={imageHero} className="img__hero-about"/>
           </div>
-        <div className="about__content element-animation-top">
-          <p className="about__title">Who I Am?</p>
-          <p className="about__info">
+          <div className="about__content element-animation-top">
+           <p className="about__title">Who I Am?</p>
+            <p className="about__info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
             architecto illo voluptas, repellat beatae rem assumenda labore est?
             Vel praesentium fuga doloribus voluptates sed quibusdam nisi qui

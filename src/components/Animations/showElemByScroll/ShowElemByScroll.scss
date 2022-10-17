@@ -1,0 +1,37 @@
+.element-animation-left {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  .element-animation-left.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
+  }
+  .element-animation-right {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  .element-animation-right.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
+  }
+  .element-animation-bottom {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  .element-animation-bottom.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+  .element-animation-top {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  .element-animation-top.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+  

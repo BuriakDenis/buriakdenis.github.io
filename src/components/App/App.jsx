@@ -9,10 +9,10 @@ import Contacts from "../Section/Contacts/Contacts";
 import Footer from "../Footer/Footer";
 
 
+
 const App = () => {
     return (
-        <React.StrictMode>
-            <div className="wrapper">
+                <div className="wrapper">
                 <Header />
                 <div className="page">
                     <Introduce />
@@ -22,8 +22,7 @@ const App = () => {
                     <Contacts />
                 </div>
                 <Footer />
-            </div>
-        </React.StrictMode>
+                </div>
     )
 }
 export default App;

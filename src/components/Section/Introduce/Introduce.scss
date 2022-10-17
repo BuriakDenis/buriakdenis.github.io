@@ -42,7 +42,7 @@
     flex: 0 1 50%;
     background-image: url("../../../components/Section/Introduce/Img/peakpx.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border-bottom: 1px solid #00e5f2;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
       rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
@@ -127,8 +127,11 @@
 }
 @media (max-width: 990px) {
   .introduce {
+    &__content-contain {
+      height: 90%;
+    }
     &__hero {
-      height: 475px;
+      height: 75%;
     }
     &__intro {
       flex: 0 1 50%;
@@ -214,10 +217,31 @@
     }
   }
 }
+@media (max-width: 580px) {
+  .introduce {
+    &__container {
+      height: 920px;
+    }
+    &__content-contain {
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &__hero {
+      height: 378px;
+    }
+  }
+  .img {
+    &__hero {
+      position: initial ;
+      bottom: 0px;
+      width: 300px;
+    }
+  }
+}
 @media (max-width: 425px) {
   .introduce {
     &__container {
-      height: 880px;
+      height: 860px;
       justify-content: center;
       align-items: center;
     }
@@ -260,7 +284,7 @@
       padding: 16px 20px 16px 40px;
     }
     &__hero {
-      height: 400px;
+      height: 378px;
       flex: 1 1 50%;
     }
   }
@@ -268,7 +292,7 @@
 @media (max-width: 375px) {
   .introduce {
     &__container {
-      height: 890px;
+      height: 860px;
     }
     &__intro {
       padding: 80px 0px 0px 0px;
@@ -297,7 +321,7 @@
 @media (max-width: 320px) {
   .introduce {
     &__container {
-      height: 730px;
+      height: 830px;
     }
     &__intro {
       padding: 65px 0px 0px 0px;
@@ -313,7 +337,7 @@
       font-size: 22px;
     }
     &__hero {
-      height: 280px;
+      height: 378px;
     }
   }
 }

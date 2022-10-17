@@ -75,8 +75,11 @@
   }
 }
 @media (max-width: 768px) {
+  .skills__container {
+    height: 580px;
+  }
   .swiper {
-    width: 48%;
+    width: 80%;
   }
   .skills__section-name {
     font-size: 38px;
@@ -84,7 +87,12 @@
 }
 @media (max-width: 640px) {
   .swiper {
-    width: 55%;
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .swiper {
+    width: 58%;
   }
 }
 @media (max-width: 425px) {
@@ -94,11 +102,16 @@
 }
 @media (max-width: 425px) {
   .swiper {
-    width: 91%;
+    width: 75%;
+  }
+}
+@media (max-width: 375px) {
+  .swiper {
+    width: 85%;
   }
 }
 @media (max-width: 320px) {
   .swiper {
-    width: 100%;
+    width: 90%;
   }
 }

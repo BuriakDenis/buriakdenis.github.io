@@ -57,6 +57,7 @@
 @media (max-width: 768px) {
   .contact {
     &__container {
+      height: 590px;
       padding: 60px 15px;
       display: flex;
       flex-direction: column;
