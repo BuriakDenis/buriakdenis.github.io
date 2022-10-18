@@ -1,8 +1,9 @@
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 body {
-  font-family: "DM Sans" sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: #fff;
   background: #090015;
@@ -19,6 +20,7 @@ section {
   width: 100%;
   font-style: normal;
 }
+
 .page {
   margin-top: 30px;
   flex: 1 1 auto;

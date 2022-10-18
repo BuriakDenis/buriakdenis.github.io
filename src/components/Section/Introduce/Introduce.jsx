@@ -8,7 +8,7 @@ import showElemByScroll from "../../Animations/ShowElemByScroll/ShowElemByScroll
 
 const Introduce = () => {
   useEffect(() => {
-   showElemByScroll()
+    showElemByScroll()
   })
   return (
     <section className="introduce" id="home" >
@@ -17,16 +17,16 @@ const Introduce = () => {
           <div className="introduce__intro">
             <div className="introduce__content element-animation-top">
               <p className="introduce__hello">Hello, I'm</p>
-              <h1 className="introduce__name">Burjak Denis</h1>
-              <p className="introduce__job-name">Junior Web Developer</p>
+              <h1 className="introduce__name">Buriak Denis</h1>
+              <p className="introduce__job-name">Front-end Developer</p>
             </div>
-            <BtnOpenModal title="GET IN TOUCH" href="#contact" className="element-animation-right"/>
+            <BtnOpenModal title="GET IN TOUCH" href="#contact" className="element-animation-right" />
           </div>
           <div className="introduce__hero element-animation-left">
-            <Image image={introduceImage} className="img__hero"/>
+            <Image image={introduceImage} className="img__hero" />
           </div>
         </div>
-        <ArrowsDown />
+        <ArrowsDown href={"#about"} class={"element-animation-top"} />
       </div>
     </section>
   );

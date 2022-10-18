@@ -14,10 +14,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 48px;
     line-height: 63px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     margin-bottom: 55px;
   }
   &__info-link {
@@ -31,14 +31,14 @@
     color: #fff;
     padding: 170px 20px 20px 20px;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.02em;
   }
   &__button-read-more {
     padding: 20px;
     color: #fff;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.02em;
   }
 }

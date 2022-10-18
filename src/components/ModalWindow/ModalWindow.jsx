@@ -1,15 +1,19 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../ModalWindow/ModalWindow.scss";
+import {modalClose} from "../../Store/Reducers/OpenModalSlice"
 
 
-const ModalWindow = ({active, setActive}) => {
+const ModalWindow = () => {
+  const modal = useSelector((state) => state.modal.modalState)
+  const dispatch = useDispatch()
   return (
-    <div className={active ? 'modal__window open' : "modal__window"} onClick={() =>setActive(false)}   >
+    <div className={modal ? 'modal__window open' : "modal__window "} onClick={() =>dispatch(modalClose())}>
       <div className="modal__window-content content" onClick={e => e.stopPropagation()} >
         <div className="content__content-info">
           <h5 className="content__title">Get in touch</h5>
           <div className="content__content">
-            <p className="content__hero-name">Burjak Denis</p>
+            <p className="content__hero-name">Buriak Denis</p>
             <p className="content__hero-location">Kiev, Ukraine</p>
             <p className="content__hero-phone">
               <a href="tel:+38-093-586-32-51" className="content__hero-link">
@@ -21,7 +25,7 @@ const ModalWindow = ({active, setActive}) => {
                 burjakdenis@gmail.com
               </a>
             </p>
-            <span className="close" onClick={() => setActive(false)}></span>
+            <span className="close" onClick={() =>dispatch(modalClose())}></span>
           </div>
         </div>
         <div className="content__social">

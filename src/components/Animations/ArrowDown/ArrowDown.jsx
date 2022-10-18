@@ -1,10 +1,10 @@
 import React from "react";
 import "../ArrowDown/ArrowDown.scss";
 
-const ArrowsDown = () => {
+const ArrowsDown = (props) => {
   return (
-    <a href="#about" className="arrow__scroll-down element-animation-top">
-      <div className="arrow__scroll-link  arrow"></div>
+    <a href={props.href} className={`arrow__scroll-down ${props.class}`}>
+      <span className="arrow__scroll-link  arrow"></span>
     </a>
   )
 }

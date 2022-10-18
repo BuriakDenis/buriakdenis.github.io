@@ -7,22 +7,22 @@ import Jobs from "../Section/Jobs/Jobs";
 import Skills from "../Section/Skills/Skills";
 import Contacts from "../Section/Contacts/Contacts";
 import Footer from "../Footer/Footer";
-
-
+import ModalWindow from "../ModalWindow/ModalWindow";
 
 const App = () => {
     return (
-                <div className="wrapper">
-                <Header />
-                <div className="page">
-                    <Introduce />
-                    <About />
-                    <Jobs />
-                    <Skills />
-                    <Contacts />
-                </div>
-                <Footer />
-                </div>
+        <div className="wrapper">
+            <Header />
+            <div className="page">
+                <Introduce />
+                <About />
+                <Jobs />
+                <Skills />
+                <Contacts />
+            </div>
+            <ModalWindow/>
+            <Footer />
+        </div>
     )
 }
 export default App;

@@ -17,13 +17,11 @@ const About = () => {
           <div className="about__content element-animation-top">
            <p className="about__title">Who I Am?</p>
             <p className="about__info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            architecto illo voluptas, repellat beatae rem assumenda labore est?
-            Vel praesentium fuga doloribus voluptates sed quibusdam nisi qui
-            dicta, consequuntur quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Odit architecto illo voluptas, repellat beatae rem
-            assumenda labore est? Vel praesentium fuga doloribus voluptates sed
-            quibusdam nisi qui dicta, consequuntur quae.
+              Junior Front-end developer with 2 month of commercial experience.
+              Well oriented in HTML/CSS, JavaScript technologies. Used React and Redux.
+              Daily studying and improving my knowledge of frameworks and technologies.
+              Doing my own projects, on which I improve my skills.
+              Able to work in a team and striving for professional development
           </p>
          <BtnDownload />
           </div>

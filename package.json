@@ -2,7 +2,7 @@
   "name": "reactapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://buriakdenis.github.io/PortfolioBD",
+  "homepage": "https://buriakdenis.github.io/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
