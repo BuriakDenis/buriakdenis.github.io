@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/buriakdenis.github.io/static/css/main.4b8f316f.css",
-    "main.js": "/buriakdenis.github.io/static/js/main.52d39eaf.js",
-    "static/media/vectors.png": "/buriakdenis.github.io/static/media/vectors.98d7e57d1953414918a1.png",
-    "static/media/Fishdep.png": "/buriakdenis.github.io/static/media/Fishdep.2bac94612f246d434837.png",
-    "static/media/reVector.png": "/buriakdenis.github.io/static/media/reVector.35c0a292a0f1064cb205.png",
-    "static/media/slideVector.png": "/buriakdenis.github.io/static/media/slideVector.2b589a46204da95cd42e.png",
-    "static/media/slideVector1.png": "/buriakdenis.github.io/static/media/slideVector1.002a4400a1a63bd5c349.png",
-    "static/media/slideVector2.png": "/buriakdenis.github.io/static/media/slideVector2.e8812b31bdba4e8fb86b.png",
-    "static/media/Rectangle.png": "/buriakdenis.github.io/static/media/Rectangle.df5ca9ba26a7cffda49f.png",
-    "static/media/peakpx.jpg": "/buriakdenis.github.io/static/media/peakpx.c7c0b065834cc4a06327.jpg",
-    "static/media/Mavka.jpg": "/buriakdenis.github.io/static/media/Mavka.734104c0f79210ac374a.jpg",
-    "static/media/BFD1.png": "/buriakdenis.github.io/static/media/BFD1.1ff265b23f1ac61d2e3f.png",
-    "static/media/bfd.png": "/buriakdenis.github.io/static/media/bfd.670111e794163495c016.png",
-    "index.html": "/buriakdenis.github.io/index.html",
-    "main.4b8f316f.css.map": "/buriakdenis.github.io/static/css/main.4b8f316f.css.map",
-    "main.52d39eaf.js.map": "/buriakdenis.github.io/static/js/main.52d39eaf.js.map"
+    "main.css": "/static/css/main.3c63d538.css",
+    "main.js": "/static/js/main.8c972a27.js",
+    "static/media/vectors.png": "/static/media/vectors.98d7e57d1953414918a1.png",
+    "static/media/Fishdep.png": "/static/media/Fishdep.2bac94612f246d434837.png",
+    "static/media/reVector.png": "/static/media/reVector.35c0a292a0f1064cb205.png",
+    "static/media/slideVector.png": "/static/media/slideVector.2b589a46204da95cd42e.png",
+    "static/media/slideVector1.png": "/static/media/slideVector1.002a4400a1a63bd5c349.png",
+    "static/media/slideVector2.png": "/static/media/slideVector2.e8812b31bdba4e8fb86b.png",
+    "static/media/Rectangle.png": "/static/media/Rectangle.df5ca9ba26a7cffda49f.png",
+    "static/media/peakpx.jpg": "/static/media/peakpx.c7c0b065834cc4a06327.jpg",
+    "static/media/Mavka.jpg": "/static/media/Mavka.734104c0f79210ac374a.jpg",
+    "static/media/BFD1.png": "/static/media/BFD1.1ff265b23f1ac61d2e3f.png",
+    "static/media/bfd.png": "/static/media/bfd.670111e794163495c016.png",
+    "index.html": "/index.html",
+    "main.3c63d538.css.map": "/static/css/main.3c63d538.css.map",
+    "main.8c972a27.js.map": "/static/js/main.8c972a27.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b8f316f.css",
-    "static/js/main.52d39eaf.js"
+    "static/css/main.3c63d538.css",
+    "static/js/main.8c972a27.js"
   ]
 }
