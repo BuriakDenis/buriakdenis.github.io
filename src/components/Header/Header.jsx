@@ -15,20 +15,9 @@ const Header = () => {
   const head = useRef();
   const modal = useSelector(state => state.modal.modalState)
   const nav = useSelector(state => state.navLink.navState)
-  const bodyWidth = document.body.offsetWidth;
   const setActiveNavLink = ({ isActive }) => isActive ? 'active-link' : "header__link"
-  const bodyPadding = () => {
-    if (modal) {
-      document.body.style.overflow = "hidden";
-      document.body.style.width = bodyWidth + "px";
-    } else {
-      setTimeout(() => {
-        document.body.style.overflow = "visible";
-        document.body.style.width = "auto";
-      }, 500);
-    }
-  }
-  bodyPadding();
+  
+  const bodyWidth = document.body.offsetWidth;
   const { hash, key } = useLocation()
   useEffect(() => {
     if (hash) {
@@ -54,16 +43,26 @@ const Header = () => {
 
       lastScroll = scrollPosition();
     });
-
+  }, [])
+  useEffect(() => {
+    
+  const bodyPadding = () => {
+    if (modal) {
+      document.body.style.overflow = "hidden";
+      document.body.style.width = bodyWidth + "px";
+    } else {
+      setTimeout(() => {
+        document.body.style.overflow = "visible";
+        document.body.style.width = "auto";
+      }, 500);
+    }
+  }
+  bodyPadding();
     const headerPadding = () => {
-      if (modal) {
-        head.current.style.width = bodyWidth + "px";
-      } else {
-        head.current.style.width = "100%";
-      }
+      modal ? head.current.style.width = bodyWidth + "px" : setTimeout(() => { head.current.style.width = "100%"}, 500);
     }
     headerPadding();
-  }, [])
+  }, [bodyWidth, modal])
 
   return (
     <>

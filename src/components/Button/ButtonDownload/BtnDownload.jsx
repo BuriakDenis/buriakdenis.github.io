@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../ButtonDownload/BtnDownload.scss";
 
-const BtnDownload = () => {
+const BtnDownload = (props) => {
     return (
-        <a href="!" className="download__button-link">
+        <a href={props.href} className="download__button-link" download>
           Download Resume
           <svg
             className="arrow-circle-icon"

@@ -3,7 +3,7 @@ import "../About/About.scss";
 import BtnDownload from "../../Button/ButtonDownload/BtnDownload";
 import Image from "../../Image/Image"
 import imageHero from "../About/Img/BFD1.png"
-
+import CV from "../About/CV/Buriak_Denis_React_developer_CV.pdf"
 
 const About = () => {
   return (
@@ -23,7 +23,7 @@ const About = () => {
               Doing my own projects, on which I improve my skills.
               Able to work in a team and striving for professional development
             </p>
-            <BtnDownload />
+            <BtnDownload href={CV} />
           </div>
         </div>
       </div>

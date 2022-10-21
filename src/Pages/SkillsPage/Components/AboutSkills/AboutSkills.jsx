@@ -3,6 +3,7 @@ import "./AboutSkills.scss"
 import BtnOpenModal from "../../../../components/Button/ButtonOpenModal/BtnOpenModal"
 import Logo from "../../../../components/Logo/Logo"
 export default function AboutSkills() {
+    
     return (
         <section className='aboutSkills'>
             <div className='aboutSkills__container'>
