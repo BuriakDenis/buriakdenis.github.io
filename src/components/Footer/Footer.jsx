@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__content">
           <small className="footer__copyright">
-            Created by BurjaFrontDev |
+            Created by BD 
           </small>
           <small className="footer__copyright">
             <span>&#169;</span>

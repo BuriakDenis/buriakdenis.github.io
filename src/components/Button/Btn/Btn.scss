@@ -1,11 +1,11 @@
-.button {
+.btn {
   &__link {
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 1px solid #00e5f2;
     border-radius: 15px;
-    width: 275px;
+    width: 210px;
     height: 66px;
     margin: 25px 0px;
     transition: 0.5s;
@@ -14,7 +14,7 @@
     color: #fff;
     font-size: 24px;
     line-height: 32px;
-    padding: 16px 20px 16px 30px;
+    padding: 16px 20px 16px 20px;
     transition: 0.5s;
     letter-spacing: 0.02em;
     cursor: pointer;
@@ -25,27 +25,24 @@
   }
 }
 @media (max-width: 425px) {
-  .button {
+  .btn {
     &__link {
-      width: 275px;
       height: 66px;
-      font-size: 22px; 
+      font-size: 22px;
     }
   }
 }
 @media (max-width: 375px) {
-  .button {
+  .btn {
     &__link {
-      width: 275px;
       height: 66px;
       font-size: 22px;
     }
   }
 }
 @media (max-width: 320px) {
-  .button {
+  .btn {
     &__link {
-      width: 235px;
       height: 66px;
       font-size: 18px;
       line-height: 32px;

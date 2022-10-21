@@ -1,4 +1,7 @@
 .jobs {
+  background-image: url("../../../components/Section/Jobs/Img/vectors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   &__container {
     display: flex;
     flex-direction: row;
@@ -22,13 +25,13 @@
   &__block-content-1 {
     display: flex;
     flex-direction: row;
-    height: 240px;
+    height: 100%;
     flex: 0 1 60%;
   }
   &__block-content-2 {
     display: flex;
     flex-direction: row-reverse;
-    height: 240px;
+    height: 100%;
     flex: 0 1 60%;
   }
   &__block-img {
@@ -38,19 +41,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 20px 20px;
+    align-items: flex-start;
     flex: 0 1 60%;
+    padding: 0px 20px;
   }
   &__block-info-name {
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
-    margin: 10px 10px;
     letter-spacing: 0.04em;
+
   }
   &__block-info-content {
-    margin: 20px 20px;
+    padding: 10px 0px;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
@@ -58,11 +61,7 @@
   }
 }
 .img {
-  &__block-1 {
-    width: 427px;
-    height: 240px;
-  }
-  &__block-2 {
+  &__block {
     width: 427px;
     height: 240px;
   }
@@ -87,16 +86,13 @@
       padding: 10px 0px;
     }
     &__block-info {
-      align-items: center;
-      margin: 0px 10px;
+      align-items: flex-start;
     }
     &__block-info-name {
       font-size: 20px;
       line-height: 26px;
-      margin: 10px 0px 10px 0px;
     }
     &__block-info-content {
-      margin: 0px 0px;
       font-size: 16px;
       line-height: 20px;
     }
@@ -141,33 +137,18 @@
     }
     &__block-info {
       align-items: flex-start;
-      margin: 0px 10px;
     }
     &__block-info-name {
       font-size: 20px;
       line-height: 26px;
-      margin: 10px 0px 10px 0px;
     }
     &__block-info-content {
-      margin: 0px 0px;
       font-size: 16px;
       line-height: 20px;
     }
   }
   .img {
-    &__block-1 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-2 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-3 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-4 {
+    &__block {
       width: 427px;
       height: 240px;
     }
@@ -177,27 +158,15 @@
   .jobs {
     &__block-info {
       flex: 1 1 auto;
-      align-items: flex-start;
-      margin: 0px 10px;
+      align-items: flex-start;;
     }
     &__section-name {
       font-size: 38px;
     }
   }
+
   .img {
-    &__block-1 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-2 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-3 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-4 {
+    &__block {
       width: 427px;
       height: 240px;
     }
@@ -219,41 +188,23 @@
     &__block-content-2 {
       justify-content: center;
     }
+    &__block-img {
+      padding: 0px 30px 0px 0px;
+    }
   }
   .img {
-    &__block-1 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-2 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-3 {
-      width: 427px;
-      height: 240px;
-    }
-    &__block-4 {
+    &__block {
       width: 427px;
       height: 240px;
     }
   }
 }
 @media (max-width: 425px) {
+  .jobs__block-img {
+    padding: 0px 0px;
+  }
   .img {
-    &__block-1 {
-      width: 397px;
-      height: 210px;
-    }
-    &__block-2 {
-      width: 397px;
-      height: 210px;
-    }
-    &__block-3 {
-      width: 397px;
-      height: 210px;
-    }
-    &__block-4 {
+    &__block {
       width: 397px;
       height: 210px;
     }
@@ -261,39 +212,7 @@
 }
 @media (max-width: 375px) {
   .img {
-    &__block-1 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-2 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-3 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-4 {
-      width: 347px;
-      height: 170px;
-    }
-  }
-}
-@media (max-width: 375px) {
-  .img {
-    &__block-1 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-2 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-3 {
-      width: 347px;
-      height: 170px;
-    }
-    &__block-4 {
+    &__block {
       width: 347px;
       height: 170px;
     }
@@ -301,21 +220,10 @@
 }
 @media (max-width: 320px) {
   .img {
-    &__block-1 {
+    &__block {
       width: 287px;
       height: 160px;
     }
-    &__block-2 {
-      width: 287px;
-      height: 160px;
-    }
-    &__block-3 {
-      width: 287px;
-      height: 160px;
-    }
-    &__block-4 {
-      width: 287px;
-      height: 160px;
-    }
+ 
   }
 }

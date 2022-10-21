@@ -1,14 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "../Header/Header.scss";
+import {
+  NavLink, Link, useLocation
+} from "react-router-dom";
+import { navStateDeactive } from "../../Store/Reducers/SetActiveNavLink";
+import Logo from "../Logo/Logo";
+
 
 
 const Header = () => {
   let [burgerOpen, setBurgerOpen] = useState(false)
-  const modal = useSelector(state => state.modal.modalState)
+  const dispatch = useDispatch()
   const head = useRef();
+  const modal = useSelector(state => state.modal.modalState)
+  const nav = useSelector(state => state.navLink.navState)
   const bodyWidth = document.body.offsetWidth;
-
+  const setActiveNavLink = ({ isActive }) => isActive ? 'active-link' : "header__link"
   const bodyPadding = () => {
     if (modal) {
       document.body.style.overflow = "hidden";
@@ -21,21 +29,19 @@ const Header = () => {
     }
   }
   bodyPadding();
-
+  const { hash, key } = useLocation()
   useEffect(() => {
-    const headerPadding = () => {
-      if (modal) {
-        head.current.style.width = "auto"
-      } else {
-        head.current.style.width = bodyWidth + "px";
-      }
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1))
+      targetElement?.scrollIntoView({ behavior: 'smooth' })
     }
-    
+  }, [key, hash])
+  useEffect(() => {
     let lastScroll = 0;
 
-    const scrollPosition = () => 
+    const scrollPosition = () =>
       window.pageYOffset || document.documentElement.scrollTop;
-    
+
     const containHide = () =>
       head.current.classList.contains("hide");
 
@@ -49,46 +55,54 @@ const Header = () => {
       lastScroll = scrollPosition();
     });
 
+    const headerPadding = () => {
+      if (modal) {
+        head.current.style.width = bodyWidth + "px";
+      } else {
+        head.current.style.width = "100%";
+      }
+    }
     headerPadding();
   }, [])
+
   return (
-    <header className="header" ref={head}>
-      <div className="header__container">
-        <div className="header__border">
-          <div className="header__logo">
-            <div className="header__logo-content">
-              <a href="#home" className="header__logo-link">
-                BD
-              </a>
+    <>
+      <header className="header" ref={head}>
+        <div className="header__container">
+          <div className="header__border">
+            <div className="header__logo">
+              <div className="header__logo-content">
+                <Logo className="header__logo-link" class="header__logo-img"/>
+              </div>
+            </div>
+            <nav className="header__navigation">
+              <ul className={`header__menu ${burgerOpen && 'active'}`} >
+                <NavLink to="/#home" className={setActiveNavLink} end onClick={() => dispatch(navStateDeactive())}>
+                  Home
+                </NavLink>
+                <Link to="/#about" className="header__link" onClick={() => dispatch(navStateDeactive())}>
+                  About
+                </Link>
+                <Link to="/#skills" className={nav ? "active-link" : "header__link"} onClick={() => dispatch(navStateDeactive())}>
+                  Skills
+                </Link>
+                <Link to="/#jobs" className="header__link" onClick={() => dispatch(navStateDeactive())}>
+                  Jobs
+                </Link>
+                <Link to="*" className="header__link" onClick={() => dispatch(navStateDeactive())}>
+                  Contact
+                </Link>
+              </ul>
+            </nav>
+            <div onClick={() => setBurgerOpen(burgerOpen = !burgerOpen)} className={`header__menu-btn ${burgerOpen && 'active'}`}>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-          <nav className="header__navigation">
-            <ul className={`header__menu ${burgerOpen && 'active'}`} >
-              <a href="#home" className="header__link">
-                Home
-              </a>
-              <a href="#about" className="header__link">
-                About
-              </a>
-              <a href="#jobs" className="header__link">
-                Jobs
-              </a>
-              <a href="#skills" className="header__link">
-                Skills
-              </a>
-              <a href="!#" className="header__link">
-                Contact
-              </a>
-            </ul>
-          </nav>
-          <div onClick={() => setBurgerOpen(burgerOpen = !burgerOpen)} className={`header__menu-btn ${burgerOpen && 'active'}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
-      </div>
-    </header >
+      </header >
+    </>
   );
 };
 export default Header;

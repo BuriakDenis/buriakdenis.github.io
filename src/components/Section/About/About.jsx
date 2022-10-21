@@ -7,23 +7,23 @@ import imageHero from "../About/Img/BFD1.png"
 
 const About = () => {
   return (
-    <section className="about" id="about">
+    <section className="about" id={"about"}>
       <div className="about__container">
-      <h2 className="about__name-section element-animation-right">About</h2>
+        <h2 className="about__name-section element-animation-right">About</h2>
         <div className="about__hero">
           <div className="about__hero-img img element-animation-right">
-            <Image image={imageHero} className="img__hero-about"/>
+            <Image src={imageHero} className="img__hero-about" />
           </div>
           <div className="about__content element-animation-top">
-           <p className="about__title">Who I Am?</p>
+            <p className="about__title">Who I Am?</p>
             <p className="about__info">
               Junior Front-end developer with 2 month of commercial experience.
               Well oriented in HTML/CSS, JavaScript technologies. Used React and Redux.
               Daily studying and improving my knowledge of frameworks and technologies.
               Doing my own projects, on which I improve my skills.
               Able to work in a team and striving for professional development
-          </p>
-         <BtnDownload />
+            </p>
+            <BtnDownload />
           </div>
         </div>
       </div>

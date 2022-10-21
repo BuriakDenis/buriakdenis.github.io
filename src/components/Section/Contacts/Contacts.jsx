@@ -1,18 +1,19 @@
 import React from "react";
 import "../Contacts/Contacts.scss";
 import BtnOpenModal from "../../Button/ButtonOpenModal/BtnOpenModal";
+import Logo from "../../Logo/Logo";
 
 
-const Contacts = (props) => {
+const Contacts = () => {
   return (
-    <section className="contact" id="contact">
+    <section className="contact" id={"contact"}>
       <div className="contact__container">
         <div className="contact__section-name element-animation-left">
           Contact
         </div>
         <div className="contact__content">
           <div className="contact__content-info">
-            <div className="contact__logo element-animation-left">BD</div>
+            <Logo className="contact__logo element-animation-left" class="contact__logo-img"/>
             <h5 className="contact__title element-animation-right">
               Let’s Talk with Me!
             </h5>

@@ -36,9 +36,9 @@
     width: 80px;
     height: 80px;
     font-size: 26px;
-    background-color: #4a2a72;
-    background: linear-gradient(to bottom right, #4a2a72, #851380);
-    border-radius: 999px;
+  }
+  &__logo-img {
+    width: 100px;
   }
   &__title {
     font-weight: 400;
@@ -65,7 +65,7 @@
       justify-content: flex-start;
     }
     &__section-name {
-      font-size: 38px;;
+      font-size: 38px;
     }
     &__content {
       height: 300px;

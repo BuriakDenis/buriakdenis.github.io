@@ -1,6 +1,6 @@
 import React from "react";
 import ThreeArrowsLeft from "../../Animations/ThreeArrowsLeft/ThreeArrowsLeft";
-import "../ButtonOpenModal/BtnOpenModal.scss";
+import "./BtnOpenModal.scss";
 import { useDispatch} from "react-redux";
 import { modalOpen } from "../../../Store/Reducers/OpenModalSlice"
 const BtnOpenModal = (props) => {

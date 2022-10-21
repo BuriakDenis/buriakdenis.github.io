@@ -1,28 +1,22 @@
 import React from "react";
-import Header from "../Header/Header";
 import "../App/App.scss"
-import Introduce from "../Section/Introduce/Introduce";
-import About from "../Section/About/About";
-import Jobs from "../Section/Jobs/Jobs";
-import Skills from "../Section/Skills/Skills";
-import Contacts from "../Section/Contacts/Contacts";
-import Footer from "../Footer/Footer";
-import ModalWindow from "../ModalWindow/ModalWindow";
+import NotFoundPage from "../../Pages/NotFoundPage/NotFoundPage";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "../../Pages/MainPage/MainPage";
+import SkillsPage from "../../Pages/SkillsPage/SkillsPage";
+import Layout from "../../Pages/Layout/Layout";
 
 const App = () => {
     return (
-        <div className="wrapper">
-            <Header />
-            <div className="page">
-                <Introduce />
-                <About />
-                <Jobs />
-                <Skills />
-                <Contacts />
-            </div>
-            <ModalWindow/>
-            <Footer />
-        </div>
+        <>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<MainPage />} />
+                    <Route path="skills" element={<SkillsPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Route>
+            </Routes>
+        </>
     )
 }
 export default App;

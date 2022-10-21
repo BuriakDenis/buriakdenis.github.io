@@ -1,6 +1,8 @@
 .about {
-    background-image: url("../../../components/Section/About/Img/vectors.png");
+    background-image: url("../../../components/Section/About/Img/reVector.png");
     background-repeat: no-repeat;
+    background-size: cover;
+  
     &__container {
       display: flex;
       flex-direction: column;

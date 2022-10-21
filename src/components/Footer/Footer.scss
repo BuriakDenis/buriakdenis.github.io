@@ -18,3 +18,24 @@
       padding: 0px 2px 0px 2px;
     }
   }
+  @media (max-width:340px) {
+    .footer {
+
+      &__content {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      &__copyright {
+
+        align-items: center;
+        color: #fff;
+        height: 40px;
+        letter-spacing: 0.02em;
+      }
+      &__copyright span {
+        padding: 0px 2px 0px 2px;
+      }
+    }
+  }

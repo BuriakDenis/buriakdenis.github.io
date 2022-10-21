@@ -11,19 +11,19 @@ const Introduce = () => {
     showElemByScroll()
   })
   return (
-    <section className="introduce" id="home" >
+    <section className="introduce" id={"home"} >
       <div className="introduce__container">
         <div className="introduce__content-contain">
           <div className="introduce__intro">
             <div className="introduce__content element-animation-top">
               <p className="introduce__hello">Hello, I'm</p>
               <h1 className="introduce__name">Buriak Denis</h1>
-              <p className="introduce__job-name">Front-end Developer</p>
+              <p className="introduce__job-name">Frontend Developer</p>
             </div>
-            <BtnOpenModal title="GET IN TOUCH" href="#contact" className="element-animation-right" />
+            <BtnOpenModal title="GET IN TOUCH" className="element-animation-right" />
           </div>
           <div className="introduce__hero element-animation-left">
-            <Image image={introduceImage} className="img__hero" />
+            <Image src={introduceImage} className="img__hero" />
           </div>
         </div>
         <ArrowsDown href={"#about"} class={"element-animation-top"} />
