@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6709a95e.css",
-    "main.js": "/static/js/main.e34cf273.js",
+    "main.css": "/static/css/main.fe27eb26.css",
+    "main.js": "/static/js/main.b9e04de3.js",
     "static/media/vectors.png": "/static/media/vectors.412337b2f1c7847c58e5.png",
     "static/media/Fishdep.png": "/static/media/Fishdep.2bac94612f246d434837.png",
     "static/media/reVector.png": "/static/media/reVector.35c0a292a0f1064cb205.png",
@@ -14,11 +14,11 @@
     "static/media/Logo.png": "/static/media/Logo.123dfc537990f261cf7e.png",
     "static/media/Buriak_Denis_React_developer_CV.pdf": "/static/media/Buriak_Denis_React_developer_CV.c05f0a8de28021f209f1.pdf",
     "index.html": "/index.html",
-    "main.6709a95e.css.map": "/static/css/main.6709a95e.css.map",
-    "main.e34cf273.js.map": "/static/js/main.e34cf273.js.map"
+    "main.fe27eb26.css.map": "/static/css/main.fe27eb26.css.map",
+    "main.b9e04de3.js.map": "/static/js/main.b9e04de3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6709a95e.css",
-    "static/js/main.e34cf273.js"
+    "static/css/main.fe27eb26.css",
+    "static/js/main.b9e04de3.js"
   ]
 }
