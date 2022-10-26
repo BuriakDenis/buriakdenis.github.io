@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fe27eb26.css",
-    "main.js": "/static/js/main.b9e04de3.js",
+    "main.js": "/static/js/main.723f6b81.js",
     "static/media/vectors.png": "/static/media/vectors.412337b2f1c7847c58e5.png",
     "static/media/Fishdep.png": "/static/media/Fishdep.2bac94612f246d434837.png",
     "static/media/reVector.png": "/static/media/reVector.35c0a292a0f1064cb205.png",
@@ -15,10 +15,10 @@
     "static/media/Buriak_Denis_React_developer_CV.pdf": "/static/media/Buriak_Denis_React_developer_CV.c05f0a8de28021f209f1.pdf",
     "index.html": "/index.html",
     "main.fe27eb26.css.map": "/static/css/main.fe27eb26.css.map",
-    "main.b9e04de3.js.map": "/static/js/main.b9e04de3.js.map"
+    "main.723f6b81.js.map": "/static/js/main.723f6b81.js.map"
   },
   "entrypoints": [
     "static/css/main.fe27eb26.css",
-    "static/js/main.b9e04de3.js"
+    "static/js/main.723f6b81.js"
   ]
 }
